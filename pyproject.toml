@@ -65,6 +65,8 @@ select = ["E", "F", "I", "UP"]
 python_version = "3.11"
 strict = true
 pretty = true
+# scripts/ are local tooling (depend on the optional `diagrams` package, not a project dep);
+exclude = ['^scripts/']
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
